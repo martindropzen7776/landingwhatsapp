@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuegaYa</title>
+
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '6731987553590260');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=6731987553590260&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+   body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle at center, #ffcc33 0%, #ff0055 30%, #3a0f3c 70%, #150d1f 100%);
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto 50px auto; /* top, right, bottom, left */
+    padding: 20px;
+    background: linear-gradient(180deg, #1a0f1c 0%, #2c0e2a 50%, #4e1a3e 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(50, 50, 50, 1);
+}
+        
+header img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.promo {
+    margin: 20px 0;
+}
+
+.promo img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(50, 50, 50, 1);
+}
+
+.cta {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+form button {
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #fe4705, #d63118);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(252, 252, 252, 1);
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #fe4705, #fcfcfc);
+    box-shadow: 0 6px 10px rgba(252, 252, 252, 1);
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer a {
+    color: #00b140;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+    </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWQ4H22EMV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QWQ4H22EMV');
+</script>
+
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="promo">
+            <img src="promo.jpg" alt="Promoción Duplica tu Depósito">
+        </div>
+        <form>
+<a href="#" id="multiLink" style="text-decoration: none;">
+    <button type="button">¡DUPLICAMOS TU PRIMER CARGA!</button>
+</a>
+
+<script>
+    const links = [
+        'https://wa.me/56966879519?text=Hola%2C%20quiero%20mi%20usuario',
+        'https://wa.me/56956579231?text=Hola%2C%20quiero%20mi%20usuario',
+        'https://wa.me/56956582135?text=Hola%2C%20quiero%20mi%20usuario',
+        'https://wa.me/56956092949?text=Hola%2C%20quiero%20mi%20usuario',
+        'https://wa.me/56956593081?text=Hola%2C%20quiero%20mi%20usuario',
+        'https://wa.me/56956180557?text=Hola%2C%20quiero%20mi%20usuario'
+    ];
+
+    document.getElementById("multiLink").addEventListener("click", function(e) {
+        e.preventDefault();
+        const randomLink = links[Math.floor(Math.random() * links.length)];
+        window.location.href = randomLink;
+    });
+</script>
+        <footer>
+            <p>JUGAR CON MODERACION. PROHIBIDO EL JUEGO A MENORES DE 18 AÑOS</p>
+        </footer>
+    </div>
+</body>
+</html>
