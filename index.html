@@ -48,32 +48,55 @@ src="https://www.facebook.com/tr?id=1296174591020026&ev=PageView&noscript=1"
         align-items: center;
     }
 
-    .button {
-        position: absolute;
-        text-align: center;
-        width: 283px;
-        height: 55px;
-        line-height: 50px;
-        top: 42%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 20px;
-        font-weight: 900;
-        color: #fffbea;
-        background: linear-gradient(135deg, #FFD700, #FFA500);
-        border: 2px solid #fff3b0;
-        border-radius: 30px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
-        font-family: 'Arial Black', sans-serif;
-        white-space: nowrap;
-    }
+.button {
+    position: absolute;
+    text-align: center;
+    width: 283px;
+    height: 55px;
+    line-height: 50px;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 900;
+    color: #fffbea;
+    background: linear-gradient(135deg, #00c851, #007e33); /* Verde */
+    border: 2px solid #a3ffb0; /* Borde verde claro */
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    box-shadow: 0 0 20px rgba(0, 200, 81, 0.6);
+    font-family: 'Arial Black', sans-serif;
+    white-space: nowrap;
+}
+
+/* Hover */
+.button:hover {
+    background: linear-gradient(135deg, #00e060, #008f3c);
+    box-shadow: 0 0 25px rgba(0, 200, 81, 0.8);
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Pulse */
+.button::after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 40px;
+    border: 2px solid rgba(0, 200, 81, 0.5);
+    animation: pulse 1.8s ease-out infinite;
+}
+
+@keyframes pulse {
+    0%   { transform: scale(1); opacity: 0.7; }
+    70%  { transform: scale(1.2); opacity: 0; }
+    100% { transform: scale(1.2); opacity: 0; }
+}
 
 
     .whatsapp-icon {
