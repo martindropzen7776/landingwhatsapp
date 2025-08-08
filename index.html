@@ -65,7 +65,6 @@ src="https://www.facebook.com/tr?id=1296174591020026&ev=PageView&noscript=1"
     border-radius: 30px;
     text-decoration: none;
     cursor: pointer;
-    transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -73,29 +72,22 @@ src="https://www.facebook.com/tr?id=1296174591020026&ev=PageView&noscript=1"
     box-shadow: 0 0 20px rgba(0, 200, 81, 0.6);
     font-family: 'Arial Black', sans-serif;
     white-space: nowrap;
+
+    /* Animación pulse movimiento */
+    animation: pulseMove 1.5s infinite ease-in-out;
 }
 
 /* Hover */
 .button:hover {
     background: linear-gradient(135deg, #00e060, #008f3c);
     box-shadow: 0 0 25px rgba(0, 200, 81, 0.8);
-    transform: translate(-50%, -50%) scale(1.05);
 }
 
-/* Pulse */
-.button::after {
-    content: "";
-    position: absolute;
-    inset: -8px;
-    border-radius: 40px;
-    border: 2px solid rgba(0, 200, 81, 0.5);
-    animation: pulse 1.8s ease-out infinite;
-}
-
-@keyframes pulse {
-    0%   { transform: scale(1); opacity: 0.7; }
-    70%  { transform: scale(1.2); opacity: 0; }
-    100% { transform: scale(1.2); opacity: 0; }
+/* Pulse con movimiento */
+@keyframes pulseMove {
+    0%   { transform: translate(-50%, -50%) scale(1); }
+    50%  { transform: translate(-50%, -50%) scale(1.08); }
+    100% { transform: translate(-50%, -50%) scale(1); }
 }
 
 
