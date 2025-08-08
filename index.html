@@ -25,69 +25,70 @@ src="https://www.facebook.com/tr?id=1296174591020026&ev=PageView&noscript=1"
 
     
     <style>
-        
-          margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
 
-        body, html {
-            height: 100%;
-        }
+    body, html {
+        height: 100%;
+    }
 
-        .landing {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background-image: url('fondo1.png');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    .landing {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url('fondo1.png');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .button {
+        position: absolute;
+        text-align: center;
+        width: 283px;
+        height: 55px;
+        line-height: 50px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-weight: 900;
+        color: #fffbea;
+        background: linear-gradient(135deg, #FFD700, #FFA500);
+        border: 2px solid #fff3b0;
+        border-radius: 30px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        font-family: 'Arial Black', sans-serif;
+        white-space: nowrap;
+    }
 
-.button {
-    position: absolute;
-    text-align: center;
-    width: 283px;
-    height: 55px;
-    line-height: 50px;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    font-weight: 900;
-    color: #fffbea;
-    background: linear-gradient(135deg, #FFD700, #FFA500);
-    border: 2px solid #fff3b0;
-    border-radius: 30px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0px;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
-    font-family: 'Arial Black', sans-serif;
-    white-space: nowrap;
-}
+    .button:hover {
+        background: linear-gradient(135deg, #ffcc00, #ff9900);
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+        transform: translate(-50%, -50%) scale(1.05);
+    }
 
-.button:hover {
-    background: linear-gradient(135deg, #ffcc00, #ff9900);
-    box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
-    transform: translate(-50%, -50%) scale(1.05);
-}
+    .whatsapp-icon {
+        width: 25px !important;
+        height: 25px !important;
+        object-fit: contain;
+        display: inline-block;
+    }
+</style>
 
-.whatsapp-icon {
-    width: 25px !important;
-    height: 25px !important;
-    object-fit: contain;
-    flex
-    </style>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWQ4H22EMV"></script>
